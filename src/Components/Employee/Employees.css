@@ -1,0 +1,14 @@
+.containers {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center; 
+    
+}
+
+
+.p-datatable .p-datatable-thead > tr > th,
+.p-datatable .p-datatable-tbody > tr > td {
+  border: 1px solid #ddd; /* Light gray border for gridlines */
+}

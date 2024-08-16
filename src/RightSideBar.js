@@ -10,6 +10,7 @@ import {
   CDBSidebarFooter,
   CDBIcon,
 } from "cdbreact";
+import { MdUploadFile } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 function RightSideBar() {
@@ -20,11 +21,15 @@ function RightSideBar() {
       </CDBSidebarHeader>
       <CDBSidebarContent>
         <CDBSidebarMenu>
-
+         
           <CDBSidebarMenuItem icon="th-large">
             <Link to="/Tiles">Dashboard</Link>
           </CDBSidebarMenuItem>
 
+          <CDBSidebarMenuItem  icon="MdUploadFile" >
+            <Link to="/FileUpload">File Upload</Link></CDBSidebarMenuItem>
+          
+         
           <CDBSidebarMenuItem icon="sticky-note">
             <Link to="/Employess">Employess</Link></CDBSidebarMenuItem>
          

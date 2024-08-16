@@ -9,8 +9,9 @@ import {
   Switch,
   Routes,
 } from "react-router-dom";
-import Employess from "./Components/Employess";
+import Employess from "./Components/Employee/Employess";
 import Sales from "./Components/Sales";
+import {FileUploadComponent} from "./Components/FileUpload/index";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <RightSideBar />
         <div className="content">
           <Routes>
+          <Route path="/FileUpload" element={<FileUploadComponent />} />
             <Route path="/Tiles" element={<Tiles />} />
             <Route path="/Employess" element={<Employess />} />
             <Route path="/Sales" element={<Sales /> } />
